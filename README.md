@@ -1,5 +1,7 @@
 # Edison-netizen
 
+<img align="right" src="https://raw.githubusercontent.com/Edison-netizen/Edison-netizen/main/assets/avatar.jpg" width="160" alt="profile avatar" />
+
 ```console
 $ whoami
 systems learner, linux operator, automation builder
@@ -53,4 +55,3 @@ I am not chasing a perfect profile. I am building a public engineering trail: no
 $ next
 publish small, useful repos; keep the README honest; make the work speak
 ```
-
