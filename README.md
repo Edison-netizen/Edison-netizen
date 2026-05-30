@@ -1,57 +1,63 @@
-# Edison-netizen
+# Jack Tan
 
 <img align="right" src="https://raw.githubusercontent.com/Edison-netizen/Edison-netizen/main/assets/avatar.jpg" width="160" alt="profile avatar" />
 
 ```console
 $ whoami
-systems learner, linux operator, automation builder
+time-series deep learning researcher, linux-first builder
 
 $ uptime
-focused on turning small machines into reliable systems
+building reproducible experiments for temporal data
 ```
 
-I like software that is boring in the best way: predictable, observable, scriptable, and easy to recover when something breaks.
+I work around deep learning for time series: forecasting, anomaly detection, representation learning, and the engineering needed to make experiments reproducible.
 
-Right now I am building my foundation around Linux, shell tooling, networking basics, local automation, and the kind of notes that survive a reboot.
+My current focus is turning papers into runnable baselines, writing down what actually changes model behavior, and keeping research code clean enough that future-me can trust it.
 
-## Operating Notes
+## Research Focus
 
-- Linux-first workflow: shell, filesystems, processes, services, logs
-- Automation over repetition: scripts, Makefiles, small CLI utilities
-- Infrastructure curiosity: containers, networking, SSH, systemd, backups
-- Documentation habit: write the runbook before the memory fades
+- Long-horizon forecasting: PatchTST, iTransformer, TimesNet, DLinear/NLinear
+- Temporal representation learning: masking, contrastive objectives, sequence encoders
+- Anomaly detection: reconstruction error, predictive uncertainty, thresholding protocol
+- Evaluation discipline: rolling windows, leakage checks, ablations, seed variance
+- Research engineering: Linux, Python, PyTorch, experiment configs, clean logs
 
-## Current Lab
+## Open Lab
 
 ```text
-dotfiles/          terminal setup, shell aliases, git config, editor defaults
-linux-notes/       commands, debugging checklists, service runbooks
-homelab-scripts/   backup, sync, health check, deployment helpers
-cli-tools/         small utilities built to remove recurring friction
+time-series-research-lab/       baselines, experiment structure, reproducibility notes
+neural-forecasting-notes/       paper cards, reading traces, implementation details
+anomaly-detection-cookbook/     metrics, thresholding, failure cases, small utilities
+temporal-foundation-models/     data windowing, pretraining sketches, config templates
 ```
 
-## Stack I Care About
+## Technical Stack
 
 ```text
-OS        Linux, WSL, Windows when necessary
-Shell     bash, PowerShell
-Code      Python, JavaScript, C basics
-Ops       Git, SSH, Docker, systemd, cron
-Focus     reliability, reproducibility, clear logs
+Language     Python, Bash, SQL
+ML           PyTorch, NumPy, pandas, scikit-learn
+Systems      Linux, Git, Docker, SSH, Makefiles
+Research     ablations, paper replication, benchmark hygiene
+Data         multivariate time series, sensor streams, event logs
 ```
 
-## Principles
+## Selected Repositories
 
-1. Prefer simple tools that explain themselves.
-2. Keep configs readable enough to rebuild from scratch.
-3. Automate only after understanding the manual path.
-4. Treat every error message as system documentation.
+| Repository | What it is |
+|---|---|
+| [`time-series-research-lab`](https://github.com/Edison-netizen/time-series-research-lab) | Research-grade scaffold for forecasting experiments and baselines. |
+| [`neural-forecasting-notes`](https://github.com/Edison-netizen/neural-forecasting-notes) | Paper notes for modern neural forecasting models. |
+| [`anomaly-detection-cookbook`](https://github.com/Edison-netizen/anomaly-detection-cookbook) | Practical recipes for time-series anomaly detection and evaluation. |
+| [`temporal-foundation-models`](https://github.com/Edison-netizen/temporal-foundation-models) | Early experiments around masked modeling and temporal pretraining. |
 
-## Status
+## Research Habits
 
-I am not chasing a perfect profile. I am building a public engineering trail: notes, scripts, experiments, and the occasional sharp little tool.
+1. Treat every benchmark split as a hypothesis, not a default.
+2. Write the failure cases before writing the conclusion.
+3. Prefer small controlled ablations over large unclear claims.
+4. Keep scripts boring, configs explicit, and logs searchable.
 
 ```console
-$ next
-publish small, useful repos; keep the README honest; make the work speak
+$ next experiment
+replicate a baseline, isolate one variable, write the result down
 ```
