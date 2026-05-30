@@ -4,38 +4,38 @@
 
 ```console
 $ whoami
-time-series deep learning researcher, linux-first builder
+time-series ML notes, baselines, and reproducible experiments
 
 $ uptime
-building reproducible experiments for temporal data
+slowly turning papers into runnable code
 ```
 
-I work around deep learning for time series: forecasting, anomaly detection, representation learning, and the engineering needed to make experiments reproducible.
+I keep a public lab around time-series machine learning: small baselines, paper notes, anomaly-detection utilities, and experiments that are simple enough to audit.
 
-My current focus is turning papers into runnable baselines, writing down what actually changes model behavior, and keeping research code clean enough that future-me can trust it.
+The goal is not to look busy. The goal is to make each claim traceable to code, a split, a metric, and a failure case.
 
 ## Research Focus
 
-- Long-horizon forecasting: PatchTST, iTransformer, TimesNet, DLinear/NLinear
-- Temporal representation learning: masking, contrastive objectives, sequence encoders
-- Anomaly detection: reconstruction error, predictive uncertainty, thresholding protocol
-- Evaluation discipline: rolling windows, leakage checks, ablations, seed variance
-- Research engineering: Linux, Python, PyTorch, experiment configs, clean logs
+- Forecasting baselines: seasonal naive, moving average, DLinear-style questions
+- Neural forecasting reading: PatchTST, iTransformer, TimesNet, FEDformer
+- Anomaly detection: thresholds, event-level metrics, cooldowns, label delay
+- Evaluation discipline: chronological splits, leakage checks, seed variance
+- Research engineering: small scripts, explicit configs, boring tests
 
 ## Open Lab
 
 ```text
-time-series-research-lab/       baselines, experiment structure, reproducibility notes
+time-series-research-lab/       runnable baselines, metrics, synthetic smoke tests
 neural-forecasting-notes/       paper cards, reading traces, implementation details
 anomaly-detection-cookbook/     metrics, thresholding, failure cases, small utilities
-temporal-foundation-models/     data windowing, pretraining sketches, config templates
+temporal-foundation-models/     masking utilities and cautious pretraining notes
 ```
 
 ## Technical Stack
 
 ```text
 Language     Python, Bash, SQL
-ML           PyTorch, NumPy, pandas, scikit-learn
+ML           PyTorch reading notes, scikit-learn-style evaluation habits
 Systems      Linux, Git, Docker, SSH, Makefiles
 Research     ablations, paper replication, benchmark hygiene
 Data         multivariate time series, sensor streams, event logs
@@ -45,10 +45,10 @@ Data         multivariate time series, sensor streams, event logs
 
 | Repository | What it is |
 |---|---|
-| [`time-series-research-lab`](https://github.com/Edison-netizen/time-series-research-lab) | Research-grade scaffold for forecasting experiments and baselines. |
-| [`neural-forecasting-notes`](https://github.com/Edison-netizen/neural-forecasting-notes) | Paper notes for modern neural forecasting models. |
-| [`anomaly-detection-cookbook`](https://github.com/Edison-netizen/anomaly-detection-cookbook) | Practical recipes for time-series anomaly detection and evaluation. |
-| [`temporal-foundation-models`](https://github.com/Edison-netizen/temporal-foundation-models) | Early experiments around masked modeling and temporal pretraining. |
+| [`time-series-research-lab`](https://github.com/Edison-netizen/time-series-research-lab) | Runnable forecasting baselines with chronological windows and metrics. |
+| [`neural-forecasting-notes`](https://github.com/Edison-netizen/neural-forecasting-notes) | Paper cards and replication notes for modern neural forecasting. |
+| [`anomaly-detection-cookbook`](https://github.com/Edison-netizen/anomaly-detection-cookbook) | Event-level anomaly metrics and thresholding notes. |
+| [`temporal-foundation-models`](https://github.com/Edison-netizen/temporal-foundation-models) | Small masking utilities and design notes for temporal pretraining. |
 
 ## Research Habits
 
